@@ -3,7 +3,151 @@
   <packageImport xmi:id="_nejRUgAKEeKpPqgvGZTakg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_EHjSEAALEeKpPqgvGZTakg" name="UseCase View"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_EHjSEAALEeKpPqgvGZTakg" name="UseCase View">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_TMiAcABIEeKURYa2u8LTYg" name="Профессор">
+      <generalization xmi:id="_XrxWcABJEeKURYa2u8LTYg" general="_F2og4ABJEeKURYa2u8LTYg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_TfDT0ABIEeKURYa2u8LTYg" name="Студент">
+      <generalization xmi:id="_VyxNcABJEeKURYa2u8LTYg" general="_F2og4ABJEeKURYa2u8LTYg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Tv_S0ABIEeKURYa2u8LTYg" name="Регистратор">
+      <generalization xmi:id="_WYES4ABJEeKURYa2u8LTYg" general="_F2og4ABJEeKURYa2u8LTYg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_T-oy0ABIEeKURYa2u8LTYg" name="Каталог курсов"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_UOz80ABIEeKURYa2u8LTYg" name="Расчётная система"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_Wo_gQABIEeKURYa2u8LTYg" name="Система регистрации на курсы" useCase="_jJt14ABIEeKURYa2u8LTYg _nSm94ABIEeKURYa2u8LTYg _pjyWUABIEeKURYa2u8LTYg _qwn84ABIEeKURYa2u8LTYg _ry2O4ABIEeKURYa2u8LTYg _uzfVYABIEeKURYa2u8LTYg _0I-MUABIEeKURYa2u8LTYg _2m6OYABIEeKURYa2u8LTYg _6SDDYABIEeKURYa2u8LTYg">
+      <ownedUseCase xmi:id="_jJt14ABIEeKURYa2u8LTYg" name="Поставить оценки" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_nSm94ABIEeKURYa2u8LTYg" name="Выбрать читаемы курсы" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_pjyWUABIEeKURYa2u8LTYg" name="Войти в систему" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_qwn84ABIEeKURYa2u8LTYg" name="Посмотреть табель" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_ry2O4ABIEeKURYa2u8LTYg" name="Зарегистрироваться на курсы" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_uzfVYABIEeKURYa2u8LTYg" name="CRUD данных о студентах" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_0I-MUABIEeKURYa2u8LTYg" name="CRUD данных о профессорах" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_2m6OYABIEeKURYa2u8LTYg" name="Открыть регистрацию" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+      <ownedUseCase xmi:id="_6SDDYABIEeKURYa2u8LTYg" name="Закрыть регистрацию" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_F2og4ABJEeKURYa2u8LTYg" name="Пользователь"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OMZR8ABJEeKURYa2u8LTYg" name="A_профессор_поставить оценки" memberEnd="_OMZR8QBJEeKURYa2u8LTYg _OMZR9ABJEeKURYa2u8LTYg" navigableOwnedEnd="_OMZR9ABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_OMZR8QBJEeKURYa2u8LTYg" name="профессор" type="_TMiAcABIEeKURYa2u8LTYg" association="_OMZR8ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OMZR8gBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OMZR8wBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_OMZR9ABJEeKURYa2u8LTYg" name="поставить оценки" type="_jJt14ABIEeKURYa2u8LTYg" association="_OMZR8ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OMZR9QBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OMZR9gBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pazl0ABJEeKURYa2u8LTYg" name="A_профессор_выбрать читаемы курсы" memberEnd="_Pazl0QBJEeKURYa2u8LTYg _Pazl1ABJEeKURYa2u8LTYg" navigableOwnedEnd="_Pazl1ABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_Pazl0QBJEeKURYa2u8LTYg" name="профессор" type="_TMiAcABIEeKURYa2u8LTYg" association="_Pazl0ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pazl0gBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pazl0wBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_Pazl1ABJEeKURYa2u8LTYg" name="выбрать читаемы курсы" type="_nSm94ABIEeKURYa2u8LTYg" association="_Pazl0ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pazl1QBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pazl1gBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_bYITcABJEeKURYa2u8LTYg" name="A_пользователь_войти в систему" memberEnd="_bYITcQBJEeKURYa2u8LTYg _bYITdABJEeKURYa2u8LTYg" navigableOwnedEnd="_bYITdABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_bYITcQBJEeKURYa2u8LTYg" name="пользователь" type="_F2og4ABJEeKURYa2u8LTYg" association="_bYITcABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bYITcgBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bYITcwBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_bYITdABJEeKURYa2u8LTYg" name="войти в систему" type="_pjyWUABIEeKURYa2u8LTYg" association="_bYITcABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bYITdQBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bYITdgBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dL9okABJEeKURYa2u8LTYg" name="A_студент_зарегистрироваться на курсы" memberEnd="_dL9okQBJEeKURYa2u8LTYg _dL9olABJEeKURYa2u8LTYg" navigableOwnedEnd="_dL9olABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_dL9okQBJEeKURYa2u8LTYg" name="студент" type="_TfDT0ABIEeKURYa2u8LTYg" association="_dL9okABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dL9okgBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dL9okwBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_dL9olABJEeKURYa2u8LTYg" name="зарегистрироваться на курсы" type="_ry2O4ABIEeKURYa2u8LTYg" association="_dL9okABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dL9olQBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dL9olgBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_dsgw4ABJEeKURYa2u8LTYg" name="A_студент_посмотреть табель" memberEnd="_dsgw4QBJEeKURYa2u8LTYg _dsgw5ABJEeKURYa2u8LTYg" navigableOwnedEnd="_dsgw5ABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_dsgw4QBJEeKURYa2u8LTYg" name="студент" type="_TfDT0ABIEeKURYa2u8LTYg" association="_dsgw4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dsgw4gBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dsgw4wBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_dsgw5ABJEeKURYa2u8LTYg" name="посмотреть табель" type="_qwn84ABIEeKURYa2u8LTYg" association="_dsgw4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dsgw5QBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dsgw5gBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gNzB4ABJEeKURYa2u8LTYg" name="A_выбрать читаемы курсы_каталог курсов" memberEnd="_gNzB4QBJEeKURYa2u8LTYg _gNzB5ABJEeKURYa2u8LTYg" navigableOwnedEnd="_gNzB5ABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_gNzB4QBJEeKURYa2u8LTYg" name="выбрать читаемы курсы" type="_nSm94ABIEeKURYa2u8LTYg" association="_gNzB4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gNzB4gBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gNzB4wBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_gNzB5ABJEeKURYa2u8LTYg" name="каталог курсов" type="_T-oy0ABIEeKURYa2u8LTYg" association="_gNzB4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gNzo8ABJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gNzo8QBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iYmFgABJEeKURYa2u8LTYg" name="A_зарегистрироваться на курсы_каталог курсов" memberEnd="_iYmFgQBJEeKURYa2u8LTYg _iYmFhABJEeKURYa2u8LTYg" navigableOwnedEnd="_iYmFhABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_iYmFgQBJEeKURYa2u8LTYg" name="зарегистрироваться на курсы" type="_ry2O4ABIEeKURYa2u8LTYg" association="_iYmFgABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iYmFggBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iYmFgwBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_iYmFhABJEeKURYa2u8LTYg" name="каталог курсов" type="_T-oy0ABIEeKURYa2u8LTYg" association="_iYmFgABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iYmFhQBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iYmFhgBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jy-_4ABJEeKURYa2u8LTYg" name="A_закрыть регистрацию_расчётная система" memberEnd="_jy-_4QBJEeKURYa2u8LTYg _jy-_5ABJEeKURYa2u8LTYg" navigableOwnedEnd="_jy-_5ABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_jy-_4QBJEeKURYa2u8LTYg" name="закрыть регистрацию" type="_6SDDYABIEeKURYa2u8LTYg" association="_jy-_4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jy-_4gBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jy-_4wBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_jy-_5ABJEeKURYa2u8LTYg" name="расчётная система" type="_UOz80ABIEeKURYa2u8LTYg" association="_jy-_4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jy-_5QBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jy-_5gBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kgJn4ABJEeKURYa2u8LTYg" name="A_регистратор_crud данных о профессорах" memberEnd="_kgJn4QBJEeKURYa2u8LTYg _kgJn5ABJEeKURYa2u8LTYg" navigableOwnedEnd="_kgJn5ABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_kgJn4QBJEeKURYa2u8LTYg" name="регистратор" type="_Tv_S0ABIEeKURYa2u8LTYg" association="_kgJn4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kgJn4gBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kgJn4wBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_kgJn5ABJEeKURYa2u8LTYg" name="crud данных о профессорах" type="_0I-MUABIEeKURYa2u8LTYg" association="_kgJn4ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kgJn5QBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kgJn5gBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lXUgcABJEeKURYa2u8LTYg" name="A_регистратор_crud данных о студентах" memberEnd="_lXUgcQBJEeKURYa2u8LTYg _lXUgdABJEeKURYa2u8LTYg" navigableOwnedEnd="_lXUgdABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_lXUgcQBJEeKURYa2u8LTYg" name="регистратор" type="_Tv_S0ABIEeKURYa2u8LTYg" association="_lXUgcABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lXUgcgBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lXUgcwBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_lXUgdABJEeKURYa2u8LTYg" name="crud данных о студентах" type="_uzfVYABIEeKURYa2u8LTYg" association="_lXUgcABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lXUgdQBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lXUgdgBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_obA68ABJEeKURYa2u8LTYg" name="A_регистратор_открыть регистрацию" memberEnd="_obA68QBJEeKURYa2u8LTYg _obA69ABJEeKURYa2u8LTYg" navigableOwnedEnd="_obA69ABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_obA68QBJEeKURYa2u8LTYg" name="регистратор" type="_Tv_S0ABIEeKURYa2u8LTYg" association="_obA68ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_obA68gBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_obA68wBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_obA69ABJEeKURYa2u8LTYg" name="открыть регистрацию" type="_2m6OYABIEeKURYa2u8LTYg" association="_obA68ABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_obA69QBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_obA69gBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pEdgkABJEeKURYa2u8LTYg" name="A_регистратор_закрыть регистрацию" memberEnd="_pEdgkQBJEeKURYa2u8LTYg _pEdglABJEeKURYa2u8LTYg" navigableOwnedEnd="_pEdglABJEeKURYa2u8LTYg">
+      <ownedEnd xmi:id="_pEdgkQBJEeKURYa2u8LTYg" name="регистратор" type="_Tv_S0ABIEeKURYa2u8LTYg" association="_pEdgkABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pEdgkgBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pEdgkwBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_pEdglABJEeKURYa2u8LTYg" name="закрыть регистрацию" type="_6SDDYABIEeKURYa2u8LTYg" association="_pEdgkABJEeKURYa2u8LTYg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pEdglQBJEeKURYa2u8LTYg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pEdglgBJEeKURYa2u8LTYg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_MW55IAALEeKpPqgvGZTakg" name="Logical View"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_O52-EAALEeKpPqgvGZTakg" name="Component View"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_RAghgAALEeKpPqgvGZTakg" name="Deployment View"/>
