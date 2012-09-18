@@ -96,7 +96,160 @@
           </ownedBehavior>
         </ownedUseCase>
         <ownedUseCase xmi:id="_qwn84ABIEeKURYa2u8LTYg" name="Посмотреть табель" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
-        <ownedUseCase xmi:id="_ry2O4ABIEeKURYa2u8LTYg" name="Зарегистрироваться на курсы" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
+        <ownedUseCase xmi:id="_ry2O4ABIEeKURYa2u8LTYg" name="Зарегистрироваться на курсы" classifierBehavior="_3AeaEAGqEeKFPrqNC288dQ" subject="_Wo_gQABIEeKURYa2u8LTYg">
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_3AeaEAGqEeKFPrqNC288dQ" name="Зарегистрироваться на курсы">
+            <ownedComment xmi:id="_PMHesAGrEeKFPrqNC288dQ" annotatedElement="_OBk-MAGrEeKFPrqNC288dQ">
+              <body>Успех</body>
+            </ownedComment>
+            <ownedComment xmi:id="_mnOBwAGsEeKFPrqNC288dQ" annotatedElement="_gRtRMAGsEeKFPrqNC288dQ">
+              <body>Неуспех</body>
+            </ownedComment>
+            <ownedBehavior xmi:type="uml:Activity" xmi:id="_VEmJcAG1EeKFPrqNC288dQ" name="Activity1"/>
+            <ownedBehavior xmi:type="uml:Activity" xmi:id="_dMZ-EAG1EeKFPrqNC288dQ" name="Activity2"/>
+            <ownedBehavior xmi:type="uml:Activity" xmi:id="_8We0cAG1EeKFPrqNC288dQ" name="Activity3"/>
+            <ownedOperation xmi:id="_rnGX8AGzEeKFPrqNC288dQ" name="Operation1"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_ESaxQAGrEeKFPrqNC288dQ" name="InitialNode1" outgoing="_q64PUAGsEeKFPrqNC288dQ" inPartition="_8In_oAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_F77swAGrEeKFPrqNC288dQ" name="Запрос регистрации" outgoing="_rYZ40AGsEeKFPrqNC288dQ" incoming="_q64PUAGsEeKFPrqNC288dQ" inPartition="_8In_oAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_IHY3sAGrEeKFPrqNC288dQ" name="Проверка состояния регистрации" outgoing="_ELqzkAGsEeKFPrqNC288dQ" incoming="_rYZ40AGsEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_KghSQAGrEeKFPrqNC288dQ" name="Выбор действия" outgoing="_VaQ-0AGyEeKFPrqNC288dQ" incoming="_R30LwAGyEeKFPrqNC288dQ" inPartition="_8In_oAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_OBk-MAGrEeKFPrqNC288dQ" name="ActivityFinalNode1" incoming="_wuTNMAGxEeKFPrqNC288dQ" inPartition="_9a44wAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_RsyrsAGrEeKFPrqNC288dQ" name="Подтверждение завершения" outgoing="_wuTNMAGxEeKFPrqNC288dQ" incoming="_f3rY4AGyEeKFPrqNC288dQ" inPartition="_9a44wAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_VZm7sAGrEeKFPrqNC288dQ" name="Завершения сеанса" outgoing="_f3rY4AGyEeKFPrqNC288dQ" incoming="_cyrW0AGyEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:DecisionNode" xmi:id="_bxQaQAGrEeKFPrqNC288dQ" name="DecisionNode1" outgoing="_E8UNYAGsEeKFPrqNC288dQ _GPAkUAGsEeKFPrqNC288dQ" incoming="_ELqzkAGsEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_erLNsAGrEeKFPrqNC288dQ" name="Запрос связи" outgoing="_1tQz0AGsEeKFPrqNC288dQ" incoming="_E8UNYAGsEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:MergeNode" xmi:id="_j-rusAGrEeKFPrqNC288dQ" name="MergeNode1" outgoing="_fSLG0AGsEeKFPrqNC288dQ" incoming="_GPAkUAGsEeKFPrqNC288dQ _TlAi0AGxEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_ISSqsAGsEeKFPrqNC288dQ" name="Вывод сообщения об ошибке" outgoing="_qMffUAGsEeKFPrqNC288dQ" incoming="_fSLG0AGsEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_gRtRMAGsEeKFPrqNC288dQ" name="ActivityFinalNode2" incoming="_qMffUAGsEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:DecisionNode" xmi:id="_yGm2MAGsEeKFPrqNC288dQ" name="DecisionNode2" outgoing="_TlAi0AGxEeKFPrqNC288dQ _YHYh0AGxEeKFPrqNC288dQ" incoming="_1tQz0AGsEeKFPrqNC288dQ" inPartition="_9a44wAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_4tC-sAGsEeKFPrqNC288dQ" name="Подтверждение связи" outgoing="_zekVYAGxEeKFPrqNC288dQ" incoming="_YHYh0AGxEeKFPrqNC288dQ" inPartition="_9a44wAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_lhiZ0AGxEeKFPrqNC288dQ" name="Запрос вариантов действий" outgoing="_R30LwAGyEeKFPrqNC288dQ" incoming="_swVi0AGxEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:MergeNode" xmi:id="_qygkMAGxEeKFPrqNC288dQ" name="MergeNode2" outgoing="_swVi0AGxEeKFPrqNC288dQ" incoming="_zekVYAGxEeKFPrqNC288dQ _63XH4AGxEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_2i7eQAGxEeKFPrqNC288dQ" name="Вывод сообщения об ошибке" outgoing="_63XH4AGxEeKFPrqNC288dQ" incoming="_i65SQAGyEeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:DecisionNode" xmi:id="_TUbTsAGyEeKFPrqNC288dQ" name="DecisionNode3" outgoing="_i65SQAGyEeKFPrqNC288dQ _SKLxUAG2EeKFPrqNC288dQ _SklOUAG2EeKFPrqNC288dQ _S_lvUAG2EeKFPrqNC288dQ _T573sAG2EeKFPrqNC288dQ" incoming="_VaQ-0AGyEeKFPrqNC288dQ" inPartition="_8In_oAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:MergeNode" xmi:id="_bPP1MAGyEeKFPrqNC288dQ" name="MergeNode3" outgoing="_cyrW0AGyEeKFPrqNC288dQ" incoming="_L4a4UAG2EeKFPrqNC288dQ _MgBD0AG2EeKFPrqNC288dQ _NmlqUAG2EeKFPrqNC288dQ _OmhdUAG2EeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ"/>
+            <node xmi:type="uml:CallBehaviorAction" xmi:id="_K1_AYAG1EeKFPrqNC288dQ" name="Создать график"/>
+            <node xmi:type="uml:CallBehaviorAction" xmi:id="_VFKKIAG1EeKFPrqNC288dQ" name="Создать график" outgoing="_L4a4UAG2EeKFPrqNC288dQ" incoming="_SKLxUAG2EeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ" behavior="_q4TGUAG1EeKFPrqNC288dQ"/>
+            <node xmi:type="uml:CallBehaviorAction" xmi:id="_dNSu4AG1EeKFPrqNC288dQ" name="Обновить график" outgoing="_MgBD0AG2EeKFPrqNC288dQ" incoming="_SklOUAG2EeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ" behavior="_nDO5QAG1EeKFPrqNC288dQ"/>
+            <node xmi:type="uml:CallBehaviorAction" xmi:id="_v87d0AG1EeKFPrqNC288dQ" name="Удалить график" outgoing="_NmlqUAG2EeKFPrqNC288dQ" incoming="_S_lvUAG2EeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ" behavior="_0-TtAAG1EeKFPrqNC288dQ"/>
+            <node xmi:type="uml:CallBehaviorAction" xmi:id="_8XL_EAG1EeKFPrqNC288dQ" name="Утвердить график" outgoing="_OmhdUAG2EeKFPrqNC288dQ" incoming="_T573sAG2EeKFPrqNC288dQ" inPartition="_9OmwQAGqEeKFPrqNC288dQ" behavior="_AmM9MAG2EeKFPrqNC288dQ"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_ELqzkAGsEeKFPrqNC288dQ" name="ControlFlow1" source="_IHY3sAGrEeKFPrqNC288dQ" target="_bxQaQAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_ELraoAGsEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_ELsBsAGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_E8UNYAGsEeKFPrqNC288dQ" name="ControlFlow2" source="_bxQaQAGrEeKFPrqNC288dQ" target="_erLNsAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_AL4VgAGyEeKFPrqNC288dQ" name="" value="регистрация открыта"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_E8VbgQGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_GPAkUAGsEeKFPrqNC288dQ" name="ControlFlow3" source="_bxQaQAGrEeKFPrqNC288dQ" target="_j-rusAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_BW4wEAGyEeKFPrqNC288dQ" name="" value="else"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_GPCZgAGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_fSLG0AGsEeKFPrqNC288dQ" name="ControlFlow4" source="_j-rusAGrEeKFPrqNC288dQ" target="_ISSqsAGsEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_fSMU8AGsEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_fSM8AAGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_qMffUAGsEeKFPrqNC288dQ" name="ControlFlow5" source="_ISSqsAGsEeKFPrqNC288dQ" target="_gRtRMAGsEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_qMgtcAGsEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_qMhUgAGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_q64PUAGsEeKFPrqNC288dQ" name="ControlFlow6" source="_ESaxQAGrEeKFPrqNC288dQ" target="_F77swAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_q65dcAGsEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_q66EgAGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_rYZ40AGsEeKFPrqNC288dQ" name="ControlFlow7" source="_F77swAGrEeKFPrqNC288dQ" target="_IHY3sAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_rYbG8AGsEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_rYbuAAGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_1tQz0AGsEeKFPrqNC288dQ" name="ControlFlow8" source="_erLNsAGrEeKFPrqNC288dQ" target="_yGm2MAGsEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_1tSB8AGsEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_1tSpAAGsEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_TlAi0AGxEeKFPrqNC288dQ" name="ControlFlow9" source="_yGm2MAGsEeKFPrqNC288dQ" target="_j-rusAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_dmJ3oAGxEeKFPrqNC288dQ" name="" value="else"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_TlCYAAGxEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_YHYh0AGxEeKFPrqNC288dQ" name="ControlFlow10" source="_yGm2MAGsEeKFPrqNC288dQ" target="_4tC-sAGsEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_h7QPoAGxEeKFPrqNC288dQ" name="" value="Каталог доступен"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_YHaXAAGxEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_swVi0AGxEeKFPrqNC288dQ" name="ControlFlow11" source="_qygkMAGxEeKFPrqNC288dQ" target="_lhiZ0AGxEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_swXYAAGxEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_swXYAQGxEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_wuTNMAGxEeKFPrqNC288dQ" name="ControlFlow12" source="_RsyrsAGrEeKFPrqNC288dQ" target="_OBk-MAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_wuT0QAGxEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_wuUbUAGxEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_zekVYAGxEeKFPrqNC288dQ" name="ControlFlow13" source="_4tC-sAGsEeKFPrqNC288dQ" target="_qygkMAGxEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_zeljgAGxEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_zemKkAGxEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_63XH4AGxEeKFPrqNC288dQ" name="ControlFlow14" source="_2i7eQAGxEeKFPrqNC288dQ" target="_qygkMAGxEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_63YWAAGxEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_63Y9EAGxEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_R30LwAGyEeKFPrqNC288dQ" name="ControlFlow15" source="_lhiZ0AGxEeKFPrqNC288dQ" target="_KghSQAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_R31Z4AGyEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_R32A8AGyEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_VaQ-0AGyEeKFPrqNC288dQ" name="ControlFlow16" source="_KghSQAGrEeKFPrqNC288dQ" target="_TUbTsAGyEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_VaS0AAGyEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_VaS0AQGyEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_cyrW0AGyEeKFPrqNC288dQ" name="ControlFlow17" source="_bPP1MAGyEeKFPrqNC288dQ" target="_VZm7sAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_cysk8AGyEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_cytMAAGyEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_f3rY4AGyEeKFPrqNC288dQ" name="ControlFlow18" source="_VZm7sAGrEeKFPrqNC288dQ" target="_RsyrsAGrEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_f3snAAGyEeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_f3tOEAGyEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_i65SQAGyEeKFPrqNC288dQ" name="ControlFlow19" source="_TUbTsAGyEeKFPrqNC288dQ" target="_2i7eQAGxEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_kQa6wAGyEeKFPrqNC288dQ" name="" value="else"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_i66gYAGyEeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_L4a4UAG2EeKFPrqNC288dQ" name="ControlFlow20" source="_VFKKIAG1EeKFPrqNC288dQ" target="_bPP1MAGyEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_L4ctgAG2EeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_L4dUkAG2EeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_MgBD0AG2EeKFPrqNC288dQ" name="ControlFlow21" source="_dNSu4AG1EeKFPrqNC288dQ" target="_bPP1MAGyEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_MgCR8AG2EeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_MgC5AAG2EeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_NmlqUAG2EeKFPrqNC288dQ" name="ControlFlow22" source="_v87d0AG1EeKFPrqNC288dQ" target="_bPP1MAGyEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_Nmm4cAG2EeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_NmnfgAG2EeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_OmhdUAG2EeKFPrqNC288dQ" name="ControlFlow23" source="_8XL_EAG1EeKFPrqNC288dQ" target="_bPP1MAGyEeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_OmircAG2EeKFPrqNC288dQ" value="true"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_OmjSgAG2EeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_SKLxUAG2EeKFPrqNC288dQ" name="ControlFlow24" source="_TUbTsAGyEeKFPrqNC288dQ" target="_VFKKIAG1EeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_spNN0AG2EeKFPrqNC288dQ" name="" value="выбрано создание и оно возможно"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_SKNmgAG2EeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_SklOUAG2EeKFPrqNC288dQ" name="ControlFlow25" source="_TUbTsAGyEeKFPrqNC288dQ" target="_dNSu4AG1EeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_oOPeYAG2EeKFPrqNC288dQ" name="" value="выбрано обновление и оно возможно"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_SknqkAG2EeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_S_lvUAG2EeKFPrqNC288dQ" name="ControlFlow26" source="_TUbTsAGyEeKFPrqNC288dQ" target="_v87d0AG1EeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_l2BCwAG2EeKFPrqNC288dQ" name="" value="выбрано удаление и оно возможно"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_S_nkgAG2EeKFPrqNC288dQ"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_T573sAG2EeKFPrqNC288dQ" name="ControlFlow27" source="_TUbTsAGyEeKFPrqNC288dQ" target="_8XL_EAG1EeKFPrqNC288dQ">
+              <guard xmi:type="uml:LiteralString" xmi:id="_h8biEAG2EeKFPrqNC288dQ" name="" value="Выбрано утверждени оно возможно"/>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_T59F0QG2EeKFPrqNC288dQ"/>
+            </edge>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_8In_oAGqEeKFPrqNC288dQ" name="Студент" node="_ESaxQAGrEeKFPrqNC288dQ _F77swAGrEeKFPrqNC288dQ _KghSQAGrEeKFPrqNC288dQ _TUbTsAGyEeKFPrqNC288dQ"/>
+            <group xmi:type="uml:StructuredActivityNode" xmi:id="_8dn_QAGqEeKFPrqNC288dQ" name="StructuredActivityNode1"/>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_9OmwQAGqEeKFPrqNC288dQ" name="Система" node="_IHY3sAGrEeKFPrqNC288dQ _bxQaQAGrEeKFPrqNC288dQ _erLNsAGrEeKFPrqNC288dQ _j-rusAGrEeKFPrqNC288dQ _gRtRMAGsEeKFPrqNC288dQ _lhiZ0AGxEeKFPrqNC288dQ _qygkMAGxEeKFPrqNC288dQ _2i7eQAGxEeKFPrqNC288dQ _bPP1MAGyEeKFPrqNC288dQ _VFKKIAG1EeKFPrqNC288dQ _dNSu4AG1EeKFPrqNC288dQ _v87d0AG1EeKFPrqNC288dQ _8XL_EAG1EeKFPrqNC288dQ _VZm7sAGrEeKFPrqNC288dQ"/>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_9a44wAGqEeKFPrqNC288dQ" name="Каталог ресурсов" node="_OBk-MAGrEeKFPrqNC288dQ _RsyrsAGrEeKFPrqNC288dQ _4tC-sAGsEeKFPrqNC288dQ _yGm2MAGsEeKFPrqNC288dQ"/>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_nDO5QAG1EeKFPrqNC288dQ"/>
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_q4TGUAG1EeKFPrqNC288dQ"/>
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_0-TtAAG1EeKFPrqNC288dQ"/>
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_AmM9MAG2EeKFPrqNC288dQ"/>
+        </ownedUseCase>
         <ownedUseCase xmi:id="_uzfVYABIEeKURYa2u8LTYg" name="CRUD данных о студентах" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
         <ownedUseCase xmi:id="_0I-MUABIEeKURYa2u8LTYg" name="CRUD данных о профессорах" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
         <ownedUseCase xmi:id="_2m6OYABIEeKURYa2u8LTYg" name="Открыть регистрацию" subject="_Wo_gQABIEeKURYa2u8LTYg"/>
