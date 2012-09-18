@@ -383,7 +383,93 @@
         <appliedProfile href="pathmap://Papyrus.profile.uml#_H9068AEYEeCIz8iAxBJnfA"/>
       </profileApplication>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_MW55IAALEeKpPqgvGZTakg" name="Logical View"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MW55IAALEeKpPqgvGZTakg" name="Logical View">
+      <packagedElement xmi:type="uml:Model" xmi:id="_CDuO0AHcEeK-Jt1yrizUxQ" name="Analysis Model">
+        <packagedElement xmi:type="uml:Package" xmi:id="_45Zs8AHeEeK-Jt1yrizUxQ" name="UseCase Realizations">
+          <packagedElement xmi:type="uml:Collaboration" xmi:id="_96NUYAHeEeK-Jt1yrizUxQ" name="Login"/>
+          <packagedElement xmi:type="uml:Collaboration" xmi:id="_BPnJ8AHfEeK-Jt1yrizUxQ" name="RegisterForCourses"/>
+          <packagedElement xmi:type="uml:Collaboration" xmi:id="_CYKtcAHfEeK-Jt1yrizUxQ" name="CloseRegistration"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_btJYsAHfEeK-Jt1yrizUxQ" name="Course">
+          <ownedAttribute xmi:id="_tkplwAHfEeK-Jt1yrizUxQ" name="description" visibility="private"/>
+          <ownedAttribute xmi:id="_u2luwAHfEeK-Jt1yrizUxQ" name="duration" visibility="private"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hLROQAHfEeK-Jt1yrizUxQ" name="Student">
+          <ownedAttribute xmi:id="_kizx0AHfEeK-Jt1yrizUxQ" name="name" visibility="private"/>
+          <ownedAttribute xmi:id="_lsevoAHfEeK-Jt1yrizUxQ" name="address" visibility="private"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hZxkUAHfEeK-Jt1yrizUxQ" name="CourseOffering">
+          <ownedAttribute xmi:id="_q6DAsAHfEeK-Jt1yrizUxQ" name="number" visibility="private"/>
+          <ownedAttribute xmi:id="_0CVa4AHfEeK-Jt1yrizUxQ" name="course" type="_btJYsAHfEeK-Jt1yrizUxQ" association="_0CWpAAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0CVa4QHfEeK-Jt1yrizUxQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0CVa4gHfEeK-Jt1yrizUxQ" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_49Ig8AHfEeK-Jt1yrizUxQ" name="professor" type="_hpQx0AHfEeK-Jt1yrizUxQ" association="_49JIAAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_49Ig8QHfEeK-Jt1yrizUxQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_49Ig8gHfEeK-Jt1yrizUxQ"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_hpQx0AHfEeK-Jt1yrizUxQ" name="Professor" visibility="private">
+          <ownedAttribute xmi:id="_rp9asAHfEeK-Jt1yrizUxQ" name="name" visibility="private"/>
+          <ownedAttribute xmi:id="_sWS8QAHfEeK-Jt1yrizUxQ" name="academicDegree" visibility="private"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_h2wbQAHfEeK-Jt1yrizUxQ" name="Schedule">
+          <ownedAttribute xmi:id="_mg1kwAHfEeK-Jt1yrizUxQ" name="semester" visibility="private"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_x62xAAHfEeK-Jt1yrizUxQ" name="" memberEnd="_x62xAQHfEeK-Jt1yrizUxQ _x61i4AHfEeK-Jt1yrizUxQ">
+          <ownedEnd xmi:id="_x62xAQHfEeK-Jt1yrizUxQ" name="hasPrerequisites" type="_btJYsAHfEeK-Jt1yrizUxQ" association="_x62xAAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x62xAgHfEeK-Jt1yrizUxQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x62xAwHfEeK-Jt1yrizUxQ"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_x61i4AHfEeK-Jt1yrizUxQ" name="prerequisitesOf" type="_btJYsAHfEeK-Jt1yrizUxQ" association="_x62xAAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x61i4QHfEeK-Jt1yrizUxQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x61i4gHfEeK-Jt1yrizUxQ"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_0CWpAAHfEeK-Jt1yrizUxQ" name="" memberEnd="_0CWpAQHfEeK-Jt1yrizUxQ _0CVa4AHfEeK-Jt1yrizUxQ">
+          <ownedEnd xmi:id="_0CWpAQHfEeK-Jt1yrizUxQ" name="courseOffering" type="_hZxkUAHfEeK-Jt1yrizUxQ" association="_0CWpAAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0CWpAgHfEeK-Jt1yrizUxQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0CWpAwHfEeK-Jt1yrizUxQ"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_19ticAHfEeK-Jt1yrizUxQ" name="" memberEnd="_19ticQHfEeK-Jt1yrizUxQ _19s7YAHfEeK-Jt1yrizUxQ">
+          <ownedEnd xmi:id="_19ticQHfEeK-Jt1yrizUxQ" name="student" type="_hLROQAHfEeK-Jt1yrizUxQ" association="_19ticAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19ticgHfEeK-Jt1yrizUxQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19ticwHfEeK-Jt1yrizUxQ" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_19s7YAHfEeK-Jt1yrizUxQ" name="schedule" type="_h2wbQAHfEeK-Jt1yrizUxQ" aggregation="composite" association="_19ticAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_19s7YQHfEeK-Jt1yrizUxQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_19s7YgHfEeK-Jt1yrizUxQ"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_2gmNEAHfEeK-Jt1yrizUxQ" name="" memberEnd="_2gmNEQHfEeK-Jt1yrizUxQ _2glmAAHfEeK-Jt1yrizUxQ">
+          <ownedEnd xmi:id="_2gmNEQHfEeK-Jt1yrizUxQ" name="primaryCourses" type="_hZxkUAHfEeK-Jt1yrizUxQ" association="_2gmNEAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2gmNEgHfEeK-Jt1yrizUxQ" value="4"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2gmNEwHfEeK-Jt1yrizUxQ"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_2glmAAHfEeK-Jt1yrizUxQ" name="schedule" type="_h2wbQAHfEeK-Jt1yrizUxQ" association="_2gmNEAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2glmAQHfEeK-Jt1yrizUxQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2glmAgHfEeK-Jt1yrizUxQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_4EY7EAHfEeK-Jt1yrizUxQ" name="" memberEnd="_4EY7EQHfEeK-Jt1yrizUxQ _4EYUAAHfEeK-Jt1yrizUxQ">
+          <ownedEnd xmi:id="_4EY7EQHfEeK-Jt1yrizUxQ" name="altrenativeCourse" type="_hZxkUAHfEeK-Jt1yrizUxQ" association="_4EY7EAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4EY7EgHfEeK-Jt1yrizUxQ" value="2"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4EY7EwHfEeK-Jt1yrizUxQ"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_4EYUAAHfEeK-Jt1yrizUxQ" name="schedule" type="_h2wbQAHfEeK-Jt1yrizUxQ" association="_4EY7EAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4EYUAQHfEeK-Jt1yrizUxQ" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4EYUAgHfEeK-Jt1yrizUxQ" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_49JIAAHfEeK-Jt1yrizUxQ" name="" memberEnd="_49JIAQHfEeK-Jt1yrizUxQ _49Ig8AHfEeK-Jt1yrizUxQ">
+          <ownedEnd xmi:id="_49JIAQHfEeK-Jt1yrizUxQ" name="courseOffering" type="_hZxkUAHfEeK-Jt1yrizUxQ" association="_49JIAAHfEeK-Jt1yrizUxQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_49JIAgHfEeK-Jt1yrizUxQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_49JIAwHfEeK-Jt1yrizUxQ"/>
+          </ownedEnd>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_O52-EAALEeKpPqgvGZTakg" name="Component View"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_RAghgAALEeKpPqgvGZTakg" name="Deployment View"/>
     <profileApplication xmi:id="_Fpsk0AAMEeKpPqgvGZTakg">
