@@ -386,9 +386,12 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_MW55IAALEeKpPqgvGZTakg" name="Logical View">
       <packagedElement xmi:type="uml:Model" xmi:id="_CDuO0AHcEeK-Jt1yrizUxQ" name="Analysis Model">
         <packagedElement xmi:type="uml:Package" xmi:id="_45Zs8AHeEeK-Jt1yrizUxQ" name="UseCase Realizations">
-          <packagedElement xmi:type="uml:Collaboration" xmi:id="_96NUYAHeEeK-Jt1yrizUxQ" name="Login"/>
-          <packagedElement xmi:type="uml:Collaboration" xmi:id="_BPnJ8AHfEeK-Jt1yrizUxQ" name="RegisterForCourses"/>
-          <packagedElement xmi:type="uml:Collaboration" xmi:id="_CYKtcAHfEeK-Jt1yrizUxQ" name="CloseRegistration"/>
+          <packagedElement xmi:type="uml:Collaboration" xmi:id="_96NUYAHeEeK-Jt1yrizUxQ" name="Login" clientDependency="_Rs2tkAHhEeK-Jt1yrizUxQ"/>
+          <packagedElement xmi:type="uml:Collaboration" xmi:id="_BPnJ8AHfEeK-Jt1yrizUxQ" name="RegisterForCourses" clientDependency="_SfPz0AHhEeK-Jt1yrizUxQ"/>
+          <packagedElement xmi:type="uml:Collaboration" xmi:id="_CYKtcAHfEeK-Jt1yrizUxQ" name="CloseRegistration" clientDependency="_S45C4AHhEeK-Jt1yrizUxQ"/>
+          <packagedElement xmi:type="uml:Realization" xmi:id="_Rs2tkAHhEeK-Jt1yrizUxQ" name="Realization1" supplier="_pjyWUABIEeKURYa2u8LTYg" client="_96NUYAHeEeK-Jt1yrizUxQ"/>
+          <packagedElement xmi:type="uml:Realization" xmi:id="_SfPz0AHhEeK-Jt1yrizUxQ" name="Realization2" supplier="_ry2O4ABIEeKURYa2u8LTYg" client="_BPnJ8AHfEeK-Jt1yrizUxQ"/>
+          <packagedElement xmi:type="uml:Realization" xmi:id="_S45C4AHhEeK-Jt1yrizUxQ" name="Realization3" supplier="_6SDDYABIEeKURYa2u8LTYg" client="_CYKtcAHfEeK-Jt1yrizUxQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_btJYsAHfEeK-Jt1yrizUxQ" name="Course">
           <ownedAttribute xmi:id="_tkplwAHfEeK-Jt1yrizUxQ" name="description" visibility="private"/>
