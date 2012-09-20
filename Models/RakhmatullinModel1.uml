@@ -451,8 +451,8 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2gmNEwHfEeK-Jt1yrizUxQ"/>
           </ownedEnd>
           <ownedEnd xmi:id="_2glmAAHfEeK-Jt1yrizUxQ" name="schedule" type="_h2wbQAHfEeK-Jt1yrizUxQ" association="_2gmNEAHfEeK-Jt1yrizUxQ">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2glmAQHfEeK-Jt1yrizUxQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2glmAgHfEeK-Jt1yrizUxQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2glmAQHfEeK-Jt1yrizUxQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2glmAgHfEeK-Jt1yrizUxQ"/>
           </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_4EY7EAHfEeK-Jt1yrizUxQ" name="" memberEnd="_4EY7EQHfEeK-Jt1yrizUxQ _4EYUAAHfEeK-Jt1yrizUxQ">
@@ -461,8 +461,8 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4EY7EwHfEeK-Jt1yrizUxQ"/>
           </ownedEnd>
           <ownedEnd xmi:id="_4EYUAAHfEeK-Jt1yrizUxQ" name="schedule" type="_h2wbQAHfEeK-Jt1yrizUxQ" association="_4EY7EAHfEeK-Jt1yrizUxQ">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4EYUAQHfEeK-Jt1yrizUxQ" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4EYUAgHfEeK-Jt1yrizUxQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4EYUAQHfEeK-Jt1yrizUxQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4EYUAgHfEeK-Jt1yrizUxQ"/>
           </ownedEnd>
         </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_49JIAAHfEeK-Jt1yrizUxQ" name="" memberEnd="_49JIAQHfEeK-Jt1yrizUxQ _49Ig8AHfEeK-Jt1yrizUxQ">

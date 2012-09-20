@@ -33,25 +33,10 @@
           <emfPageIdentifier href="RakhmatullinModel1.notation#_SYuk8ABIEeKURYa2u8LTYg"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_4crSUAGqEeKFPrqNC288dQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_ss7z4AGNEeKrT_xYRd70Ig"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_GyzFsAHfEeK-Jt1yrizUxQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_LUkAsAHfEeK-Jt1yrizUxQ"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_I90y0AHfEeK-Jt1yrizUxQ"/>
         </children>
         <children>
           <emfPageIdentifier href="RakhmatullinModel1.notation#_WiLIoAHfEeK-Jt1yrizUxQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_4eb9UAHgEeK-Jt1yrizUxQ"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_I90y0AHfEeK-Jt1yrizUxQ"/>
         </children>
       </children>
     </windows>
