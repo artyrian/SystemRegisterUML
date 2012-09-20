@@ -42,9 +42,6 @@
           <emfPageIdentifier href="RakhmatullinModel1.notation#_GyzFsAHfEeK-Jt1yrizUxQ"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_I90y0AHfEeK-Jt1yrizUxQ"/>
-        </children>
-        <children>
           <emfPageIdentifier href="RakhmatullinModel1.notation#_LUkAsAHfEeK-Jt1yrizUxQ"/>
         </children>
         <children>
@@ -52,6 +49,9 @@
         </children>
         <children>
           <emfPageIdentifier href="RakhmatullinModel1.notation#_4eb9UAHgEeK-Jt1yrizUxQ"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_I90y0AHfEeK-Jt1yrizUxQ"/>
         </children>
       </children>
     </windows>

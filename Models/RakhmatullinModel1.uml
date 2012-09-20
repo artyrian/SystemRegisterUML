@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Documentation="http://Papyrus/schemas/Documentation/_vaU6gAEYEeCIz8iAxBJnfA/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://Papyrus/schemas/Documentation/_vaU6gAEYEeCIz8iAxBJnfA/0 pathmap://Papyrus.profile.uml#_vaU6ggEYEeCIz8iAxBJnfA">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Documentation="http://Papyrus/schemas/Documentation/_vaU6gAEYEeCIz8iAxBJnfA/0" xmlns:_4prak="http:///schemas/_4prak/_VOuo4OonEeGUcs5WXJGZqw/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://Papyrus/schemas/Documentation/_vaU6gAEYEeCIz8iAxBJnfA/0 pathmap://Papyrus.profile.uml#_vaU6ggEYEeCIz8iAxBJnfA http:///schemas/_4prak/_VOuo4OonEeGUcs5WXJGZqw/0 ../4prak.profile.uml#_VPLU0eonEeGUcs5WXJGZqw">
   <uml:Model xmi:id="_nejRUQAKEeKpPqgvGZTakg" name="Model">
     <ownedComment xmi:id="_fbUewAGLEeKrT_xYRd70Ig">
       <body>Comment1</body>
@@ -471,6 +471,9 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_49JIAwHfEeK-Jt1yrizUxQ"/>
           </ownedEnd>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0gjmoANNEeKDT_o0OAe2GA" name="CourseCatalogSystem"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_4tjLgANNEeKDT_o0OAe2GA" name="RegisterForCoursesForm"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-m49cANNEeKDT_o0OAe2GA" name="RegistrationController"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_O52-EAALEeKpPqgvGZTakg" name="Component View"/>
@@ -494,4 +497,10 @@
     <associatedResource>platform:/resource/SystemRegistry/Models/conditions/sign_in.txt</associatedResource>
     <associatedResource>platform:/resource/SystemRegistry/Models/conditions/close_reg.txt</associatedResource>
   </Documentation:Documentation>
+  <_4prak:control xmi:id="_PxTbAANOEeKDT_o0OAe2GA" base_Class="_-m49cANNEeKDT_o0OAe2GA"/>
+  <_4prak:boundary xmi:id="_YnNEsANOEeKDT_o0OAe2GA" base_Class="_0gjmoANNEeKDT_o0OAe2GA"/>
+  <_4prak:boundary xmi:id="_eTBYAANOEeKDT_o0OAe2GA" base_Class="_4tjLgANNEeKDT_o0OAe2GA"/>
+  <_4prak:entity xmi:id="_lJA_cANOEeKDT_o0OAe2GA" base_Class="_hLROQAHfEeK-Jt1yrizUxQ"/>
+  <_4prak:entity xmi:id="_l37T4ANOEeKDT_o0OAe2GA" base_Class="_h2wbQAHfEeK-Jt1yrizUxQ"/>
+  <_4prak:entity xmi:id="_m26EoANOEeKDT_o0OAe2GA" base_Class="_hZxkUAHfEeK-Jt1yrizUxQ"/>
 </xmi:XMI>
