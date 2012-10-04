@@ -39,21 +39,37 @@
     <availablePage>
       <emfPageIdentifier href="RakhmatullinModel1.notation#_ejOUoAVmEeKixt9uQzKT9w"/>
     </availablePage>
+    <availablePage/>
     <availablePage>
-      <emfPageIdentifier href="RakhmatullinModel1.notation#_kTZ5sA5dEeKhM-LbJL1lEw"/>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_IWowAA5hEeKhM-LbJL1lEw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_-IS9oA5pEeKhM-LbJL1lEw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_-GcjgA5pEeKhM-LbJL1lEw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_AucQwA57EeKhM-LbJL1lEw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_MLMygA58EeKhM-LbJL1lEw"/>
     </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_SYuk8ABIEeKURYa2u8LTYg"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_IWowAA5hEeKhM-LbJL1lEw"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_1cTfEAS_EeKYap52zI2Oqg"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_-GcjgA5pEeKhM-LbJL1lEw"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_JvwMUATPEeKBWuNxutB_JA"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_AucQwA57EeKhM-LbJL1lEw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_MLMygA58EeKhM-LbJL1lEw"/>
         </children>
       </children>
     </windows>
