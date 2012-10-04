@@ -39,18 +39,39 @@
     <availablePage>
       <emfPageIdentifier href="RakhmatullinModel1.notation#_ejOUoAVmEeKixt9uQzKT9w"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="jdbc.notation#_m_crUAVsEeKixt9uQzKT9w"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="jdbc.notation#_YqolQAWVEeKx6rjYNVC35A"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_YqxIIAWVEeKx6rjYNVC35A"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_Yqs2sAWVEeKx6rjYNVC35A"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_mGciwAWYEeKx6rjYNVC35A"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="jdbc.notation#_6PjpQAWcEeKx6rjYNVC35A"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_RGZMMAWfEeKx6rjYNVC35A"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_SYuk8ABIEeKURYa2u8LTYg"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_RGZMMAWfEeKx6rjYNVC35A"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_I90y0AHfEeK-Jt1yrizUxQ"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_4eb9UAHgEeK-Jt1yrizUxQ"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_ejOUoAVmEeKixt9uQzKT9w"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_1cTfEAS_EeKYap52zI2Oqg"/>
         </children>
       </children>
     </windows>
