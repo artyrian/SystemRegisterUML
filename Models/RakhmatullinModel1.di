@@ -39,6 +39,9 @@
     <availablePage>
       <emfPageIdentifier href="RakhmatullinModel1.notation#_ejOUoAVmEeKixt9uQzKT9w"/>
     </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_kTZ5sA5dEeKhM-LbJL1lEw"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
@@ -47,10 +50,10 @@
           <emfPageIdentifier href="RakhmatullinModel1.notation#_SYuk8ABIEeKURYa2u8LTYg"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_I90y0AHfEeK-Jt1yrizUxQ"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_1cTfEAS_EeKYap52zI2Oqg"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_ejOUoAVmEeKixt9uQzKT9w"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_JvwMUATPEeKBWuNxutB_JA"/>
         </children>
       </children>
     </windows>

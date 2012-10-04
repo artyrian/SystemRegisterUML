@@ -2504,7 +2504,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_FsME0wNREeKDT_o0OAe2GA" y="20"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_FsME1ANREeKDT_o0OAe2GA" type="6003">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_FsME1QNREeKDT_o0OAe2GA" x="33" y="-45"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_FsME1QNREeKDT_o0OAe2GA" x="80" y="-10"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_FsMr4ANREeKDT_o0OAe2GA" type="6005">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_FsMr4QNREeKDT_o0OAe2GA" x="-28" y="13"/>
@@ -4937,5 +4937,26 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wU44EAVpEeKixt9uQzKT9w" id="(0.02054794520547945,0.8)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wU44EQVpEeKixt9uQzKT9w" id="(0.14189189189189189,0.04)"/>
     </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_kTZ5sA5dEeKhM-LbJL1lEw" type="PapyrusUMLCommunicationDiagram" name="ComDiagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_kTZ5sQ5dEeKhM-LbJL1lEw" type="8002" fontName="Segoe UI" lineColor="0">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kTZ5sg5dEeKhM-LbJL1lEw" source="ShadowFigure">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kTZ5sw5dEeKhM-LbJL1lEw" key="ShadowFigure_Value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kTZ5tA5dEeKhM-LbJL1lEw" source="displayNameLabelIcon">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kTZ5tQ5dEeKhM-LbJL1lEw" key="displayNameLabelIcon_value" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kTZ5tg5dEeKhM-LbJL1lEw" source="QualifiedName">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kTZ5tw5dEeKhM-LbJL1lEw" key="QualifiedNameDepth" value="1000"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_kTagwA5dEeKhM-LbJL1lEw" type="5001"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_kTagwQ5dEeKhM-LbJL1lEw" type="7001">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kTagwg5dEeKhM-LbJL1lEw"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="RakhmatullinModel1.uml#_BJBcgATOEeKBWuNxutB_JA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kTagww5dEeKhM-LbJL1lEw"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_kTagxA5dEeKhM-LbJL1lEw"/>
+    <element xmi:type="uml:Interaction" href="RakhmatullinModel1.uml#_BJBcgATOEeKBWuNxutB_JA"/>
   </notation:Diagram>
 </xmi:XMI>
