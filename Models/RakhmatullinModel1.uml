@@ -896,7 +896,7 @@
           <ownedOperation xmi:id="_YaZJ4ATREeKBWuNxutB_JA" name="//hasScheduleForSemester"/>
           <ownedOperation xmi:id="_l3-JgAT2EeKixt9uQzKT9w" name="//addSchedule"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_hZxkUAHfEeK-Jt1yrizUxQ" name="CourseOffering">
+        <packagedElement xmi:type="uml:Class" xmi:id="_hZxkUAHfEeK-Jt1yrizUxQ" name="CourseOffering" classifierBehavior="_lpFLYA7aEeKhM-LbJL1lEw">
           <ownedAttribute xmi:id="_q6DAsAHfEeK-Jt1yrizUxQ" name="number" visibility="private"/>
           <ownedAttribute xmi:id="_0CVa4AHfEeK-Jt1yrizUxQ" name="course" type="_btJYsAHfEeK-Jt1yrizUxQ" association="_0CWpAAHfEeK-Jt1yrizUxQ">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0CVa4QHfEeK-Jt1yrizUxQ" value="1"/>
@@ -909,6 +909,90 @@
           <ownedAttribute xmi:id="_yXSm8AVkEeKixt9uQzKT9w" name="numStudents" visibility="private" isDerived="true"/>
           <ownedAttribute xmi:id="_ylVqAAVkEeKixt9uQzKT9w" name="day" visibility="private"/>
           <ownedAttribute xmi:id="_yzD88AVkEeKixt9uQzKT9w" name="pair" visibility="private"/>
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_lpFLYA7aEeKhM-LbJL1lEw" name="LifeCycle">
+            <region xmi:id="_m7qNkA7aEeKhM-LbJL1lEw" name="Region1">
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_rJAXwA7aEeKhM-LbJL1lEw" name="Initial0"/>
+              <subvertex xmi:type="uml:FinalState" xmi:id="_rqTG8A7aEeKhM-LbJL1lEw" name="FinalState0"/>
+              <subvertex xmi:type="uml:State" xmi:id="_uFJ_0A7aEeKhM-LbJL1lEw" name="Open"/>
+              <subvertex xmi:type="uml:State" xmi:id="_vBzOQA7aEeKhM-LbJL1lEw" name="Canceled"/>
+              <subvertex xmi:type="uml:State" xmi:id="_wvNyUA7aEeKhM-LbJL1lEw" name="Closed"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_zbQh0A7aEeKhM-LbJL1lEw" name="Choic0" kind="choice"/>
+              <transition xmi:id="_1xUaQA7aEeKhM-LbJL1lEw" name="Transition0" source="_rJAXwA7aEeKhM-LbJL1lEw" target="_uFJ_0A7aEeKhM-LbJL1lEw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rwkKMA7eEeKhM-LbJL1lEw" name="next" isActive="true">
+                  <language>Natural language</language>
+                  <body>numStudents=0; ^courseRoster.create();</body>
+                </effect>
+                <trigger xmi:id="_DB7-8A7fEeKhM-LbJL1lEw" name="create" event="_Ckt3cA7fEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_4bfhgA7aEeKhM-LbJL1lEw" name="close" source="_uFJ_0A7aEeKhM-LbJL1lEw" target="_zbQh0A7aEeKhM-LbJL1lEw">
+                <trigger xmi:id="_7xZ38A7bEeKhM-LbJL1lEw" name="close" event="_7oksEA7bEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_5IHW8A7aEeKhM-LbJL1lEw" name="cancel" source="_uFJ_0A7aEeKhM-LbJL1lEw" target="_vBzOQA7aEeKhM-LbJL1lEw">
+                <trigger xmi:id="_Ct2ssA7cEeKhM-LbJL1lEw" name="cancel" event="_CchsIA7cEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_5di0YA7aEeKhM-LbJL1lEw" name="when(numStudents == 10)" source="_uFJ_0A7aEeKhM-LbJL1lEw" target="_wvNyUA7aEeKhM-LbJL1lEw">
+                <trigger xmi:id="_2Ge8gA7bEeKhM-LbJL1lEw" name="trig1" event="_LeXgEA7cEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_6ZT5EA7aEeKhM-LbJL1lEw" name="Transition4" source="_zbQh0A7aEeKhM-LbJL1lEw" target="_wvNyUA7aEeKhM-LbJL1lEw" guard="_cpEKIA7fEeKhM-LbJL1lEw">
+                <ownedRule xmi:id="_cpEKIA7fEeKhM-LbJL1lEw">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_cpEKIQ7fEeKhM-LbJL1lEw" name="" value="else"/>
+                </ownedRule>
+              </transition>
+              <transition xmi:id="_6xwOQA7aEeKhM-LbJL1lEw" name="[numStudents &lt; 3]" source="_zbQh0A7aEeKhM-LbJL1lEw" target="_vBzOQA7aEeKhM-LbJL1lEw" guard="_e-0A4A7cEeKhM-LbJL1lEw">
+                <ownedRule xmi:type="uml:IntervalConstraint" xmi:id="_UtlBoA7cEeKhM-LbJL1lEw" name="[numStudents &lt; 3]"/>
+                <ownedRule xmi:id="_e-0A4A7cEeKhM-LbJL1lEw" name="[numStudents &lt; 3]">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_ZzAjAA7fEeKhM-LbJL1lEw" name="" value="numStudents &lt; 3"/>
+                </ownedRule>
+              </transition>
+              <transition xmi:id="_AmsoYA7bEeKhM-LbJL1lEw" name="Transition6" source="_wvNyUA7aEeKhM-LbJL1lEw" target="_vBzOQA7aEeKhM-LbJL1lEw">
+                <trigger xmi:id="_TJJ6IA7fEeKhM-LbJL1lEw" event="_CchsIA7cEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_CvBm0A7bEeKhM-LbJL1lEw" name="Transition7" source="_vBzOQA7aEeKhM-LbJL1lEw" target="_rqTG8A7aEeKhM-LbJL1lEw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_1-oEMA7fEeKhM-LbJL1lEw">
+                  <language>Natural language</language>
+                  <body>^courseRoster.del()</body>
+                </effect>
+                <trigger xmi:id="_yj6Q0A7fEeKhM-LbJL1lEw" name="del" event="_yZLngA7fEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_ESC4wA7bEeKhM-LbJL1lEw" name="Transition8" source="_wvNyUA7aEeKhM-LbJL1lEw" target="_rqTG8A7aEeKhM-LbJL1lEw">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_FKoUUA7gEeKhM-LbJL1lEw">
+                  <language>Natural language</language>
+                  <body>^courseRoster.del()</body>
+                </effect>
+                <trigger xmi:id="_DQ4kcA7gEeKhM-LbJL1lEw" name="" event="_yZLngA7fEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_BOt_wA7dEeKhM-LbJL1lEw" name="addStudents" kind="internal" source="_uFJ_0A7aEeKhM-LbJL1lEw" target="_uFJ_0A7aEeKhM-LbJL1lEw" guard="_EcPPMA7eEeKhM-LbJL1lEw">
+                <ownedRule xmi:id="_Ns_eUA7dEeKhM-LbJL1lEw" name="numStudents" constrainedElement="_D09xYg5gEeKhM-LbJL1lEw"/>
+                <ownedRule xmi:id="_EcPPMA7eEeKhM-LbJL1lEw" name="numStudents &lt; 10">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_EcPPMQ7eEeKhM-LbJL1lEw" name="" value="numStudents &lt; 10"/>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_LUI7IA7eEeKhM-LbJL1lEw" name="inc" isActive="true">
+                  <language>Natural language</language>
+                  <body>numStudents++;^courseRoaster.add()</body>
+                </effect>
+                <trigger xmi:id="_WnZtMA7gEeKhM-LbJL1lEw" event="_Wan1cA7gEeKhM-LbJL1lEw"/>
+              </transition>
+              <transition xmi:id="_Exos4A7dEeKhM-LbJL1lEw" name="Transition2" kind="internal" source="_uFJ_0A7aEeKhM-LbJL1lEw" target="_uFJ_0A7aEeKhM-LbJL1lEw" guard="_6FEfsA7gEeKhM-LbJL1lEw">
+                <ownedRule xmi:id="_6FEfsA7gEeKhM-LbJL1lEw">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_6FEfsQ7gEeKhM-LbJL1lEw" name="" value="numStudens > 0"/>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="__ad3EA7gEeKhM-LbJL1lEw">
+                  <language>Natural language</language>
+                  <body>numStudents--;^courseRoaster.remove();</body>
+                </effect>
+                <trigger xmi:id="_0YXbkA7gEeKhM-LbJL1lEw" event="_0Nm9EA7gEeKhM-LbJL1lEw"/>
+              </transition>
+            </region>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_Uscm8A7hEeKhM-LbJL1lEw" name="cancel()"/>
+          <ownedOperation xmi:id="_apJ18A7hEeKhM-LbJL1lEw" name="close()"/>
+          <ownedOperation xmi:id="_c_iegA7hEeKhM-LbJL1lEw" name="del()"/>
+          <ownedOperation xmi:id="_fMKHEA7hEeKhM-LbJL1lEw" name="addStudent(sch: Schedule)">
+            <ownedParameter xmi:id="_iE7rAA7hEeKhM-LbJL1lEw" name="sch" type="_h2wbQAHfEeK-Jt1yrizUxQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_ksPEcA7hEeKhM-LbJL1lEw" name="removeStudent(sch: Schedule)">
+            <ownedParameter xmi:id="_nGvYAA7hEeKhM-LbJL1lEw" name="sch" type="_h2wbQAHfEeK-Jt1yrizUxQ"/>
+          </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_hpQx0AHfEeK-Jt1yrizUxQ" name="Professor" visibility="private">
           <ownedAttribute xmi:id="_rp9asAHfEeK-Jt1yrizUxQ" name="name" visibility="private"/>
@@ -1874,6 +1958,17 @@
               </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Dependency" xmi:id="_L7fM0A7PEeKhM-LbJL1lEw" name="Dependency1" supplier="_9xGmIg5pEeKhM-LbJL1lEw" client="_ONRJMA6CEeKhM-LbJL1lEw"/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_1mq0AA7bEeKhM-LbJL1lEw" name="when(numStudents == 10)"/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_7oksEA7bEeKhM-LbJL1lEw" name="close"/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_CchsIA7cEeKhM-LbJL1lEw" name="cancel"/>
+            <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_LeXgEA7cEeKhM-LbJL1lEw" name="when(numStudents == 10)"/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_Z9oJgA7dEeKhM-LbJL1lEw" name="addStudents"/>
+            <packagedElement xmi:type="uml:Interval" xmi:id="_oszTsA7dEeKhM-LbJL1lEw" name="3"/>
+            <packagedElement xmi:type="uml:Interval" xmi:id="_v30I4A7dEeKhM-LbJL1lEw" name="numStudents &lt; 10"/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_Ckt3cA7fEeKhM-LbJL1lEw" name=""/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_yZLngA7fEeKhM-LbJL1lEw" name="del"/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_Wan1cA7gEeKhM-LbJL1lEw" name="addStudents"/>
+            <packagedElement xmi:type="uml:CallEvent" xmi:id="_0Nm9EA7gEeKhM-LbJL1lEw" name="removeStudents"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_4rKeMA53EeKhM-LbJL1lEw" name="Interfaces">
             <packageImport xmi:id="_X96oEA57EeKhM-LbJL1lEw" importedPackage="_Xd1WoA53EeKhM-LbJL1lEw"/>
