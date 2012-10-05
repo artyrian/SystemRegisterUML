@@ -109,16 +109,7 @@
           <emfPageIdentifier href="RakhmatullinModel1.notation#_XDpmUA7KEeKhM-LbJL1lEw"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_n7L8cA7QEeKhM-LbJL1lEw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_n7mzMA7QEeKhM-LbJL1lEw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_m73o8A7aEeKhM-LbJL1lEw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_-GcjgA5pEeKhM-LbJL1lEw"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_1vWIgA7TEeKhM-LbJL1lEw"/>
         </children>
       </children>
     </windows>

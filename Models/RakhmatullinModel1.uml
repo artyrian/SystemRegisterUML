@@ -1807,8 +1807,8 @@
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmQw5pEeKhM-LbJL1lEw"/>
               </ownedEnd>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_9xGmmQ5pEeKhM-LbJL1lEw" name="PartTimeStudent">
-              <generalization xmi:id="_9xGmmg5pEeKhM-LbJL1lEw" general="_9xGmGw5pEeKhM-LbJL1lEw"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_9xGmmQ5pEeKhM-LbJL1lEw" name="PartTimeClassification ">
+              <generalization xmi:id="_9xGmmg5pEeKhM-LbJL1lEw" general="_ZAzj0A78EeKhM-LbJL1lEw"/>
               <ownedAttribute xmi:id="_9xGmmw5pEeKhM-LbJL1lEw" name="maxNumOfCourses" visibility="private" type="_D09xYg5gEeKhM-LbJL1lEw"/>
               <ownedOperation xmi:id="_7WnoIA7VEeKhM-LbJL1lEw" name="getNumOfCourses">
                 <ownedParameter xmi:id="_Fd5SwA7ZEeKhM-LbJL1lEw" type="_D09xYg5gEeKhM-LbJL1lEw" direction="return"/>
@@ -1846,6 +1846,10 @@
               <ownedAttribute xmi:id="_9xGmHQ5pEeKhM-LbJL1lEw" name="address" visibility="private" type="_D09xXg5gEeKhM-LbJL1lEw"/>
               <ownedAttribute xmi:id="_9xGmHg5pEeKhM-LbJL1lEw" name="id" visibility="private" type="_D09xYg5gEeKhM-LbJL1lEw"/>
               <ownedAttribute xmi:id="_u6vLsA7UEeKhM-LbJL1lEw" name="nextAvailId" visibility="private" isStatic="true" type="_D09xYg5gEeKhM-LbJL1lEw"/>
+              <ownedAttribute xmi:id="_qlgpUA7_EeKhM-LbJL1lEw" name="classification" type="_ZAzj0A78EeKhM-LbJL1lEw" aggregation="composite" association="_qlhQYg7_EeKhM-LbJL1lEw">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qlhQYA7_EeKhM-LbJL1lEw" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qlhQYQ7_EeKhM-LbJL1lEw" value="1"/>
+              </ownedAttribute>
               <nestedClassifier xmi:type="uml:Actor" xmi:id="_9xGmHw5pEeKhM-LbJL1lEw"/>
               <ownedOperation xmi:id="_9xGmIA5pEeKhM-LbJL1lEw" name="hasScheduleForSemester">
                 <ownedParameter xmi:id="_Tw-94A7ZEeKhM-LbJL1lEw" type="_D09xYQ5gEeKhM-LbJL1lEw" direction="return"/>
@@ -1882,8 +1886,8 @@
                 </ownedParameter>
               </ownedOperation>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_9xGmlg5pEeKhM-LbJL1lEw" name="FullTimeStudent">
-              <generalization xmi:id="_9xGmlw5pEeKhM-LbJL1lEw" general="_9xGmGw5pEeKhM-LbJL1lEw"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_9xGmlg5pEeKhM-LbJL1lEw" name="FullTimeClassification ">
+              <generalization xmi:id="_9xGmlw5pEeKhM-LbJL1lEw" general="_ZAzj0A78EeKhM-LbJL1lEw"/>
               <ownedAttribute xmi:id="_9xGmmA5pEeKhM-LbJL1lEw" name="gradueateDate" visibility="private" type="_D09xSw5gEeKhM-LbJL1lEw"/>
               <ownedOperation xmi:id="_u1axYA7VEeKhM-LbJL1lEw" name="getGrDate">
                 <ownedParameter xmi:id="_Bv4v8A7ZEeKhM-LbJL1lEw" type="_D09xSw5gEeKhM-LbJL1lEw" direction="return"/>
@@ -1986,6 +1990,13 @@
             <packagedElement xmi:type="uml:CallEvent" xmi:id="_yZLngA7fEeKhM-LbJL1lEw" name="del"/>
             <packagedElement xmi:type="uml:CallEvent" xmi:id="_Wan1cA7gEeKhM-LbJL1lEw" name="addStudents"/>
             <packagedElement xmi:type="uml:CallEvent" xmi:id="_0Nm9EA7gEeKhM-LbJL1lEw" name="removeStudents"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_ZAzj0A78EeKhM-LbJL1lEw" name="Classification" isAbstract="true"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_qlhQYg7_EeKhM-LbJL1lEw" name="student_classification_1" memberEnd="_qlhQYw7_EeKhM-LbJL1lEw _qlgpUA7_EeKhM-LbJL1lEw">
+              <ownedEnd xmi:id="_qlhQYw7_EeKhM-LbJL1lEw" name="student" type="_9xGmGw5pEeKhM-LbJL1lEw" association="_qlhQYg7_EeKhM-LbJL1lEw">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qlhQZA7_EeKhM-LbJL1lEw" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qlhQZQ7_EeKhM-LbJL1lEw" value="1"/>
+              </ownedEnd>
+            </packagedElement>
           </packagedElement>
           <packagedElement xmi:type="uml:Package" xmi:id="_4rKeMA53EeKhM-LbJL1lEw" name="Interfaces">
             <packageImport xmi:id="_X96oEA57EeKhM-LbJL1lEw" importedPackage="_Xd1WoA53EeKhM-LbJL1lEw"/>
