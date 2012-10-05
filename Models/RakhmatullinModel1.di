@@ -55,6 +55,19 @@
     <availablePage>
       <emfPageIdentifier href="RakhmatullinModel1.notation#_MLMygA58EeKhM-LbJL1lEw"/>
     </availablePage>
+    <availablePage/>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_Pk7AYA7JEeKhM-LbJL1lEw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_BoTsQA5gEeKhM-LbJL1lEw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_BrxP8A5gEeKhM-LbJL1lEw"/>
+    </availablePage>
+    <availablePage>
+      <emfPageIdentifier href="RakhmatullinModel1.notation#_XDpmUA7KEeKhM-LbJL1lEw"/>
+    </availablePage>
   </pageList>
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0">
     <windows>
@@ -63,13 +76,19 @@
           <emfPageIdentifier href="RakhmatullinModel1.notation#_IWowAA5hEeKhM-LbJL1lEw"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_-GcjgA5pEeKhM-LbJL1lEw"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_1cTfEAS_EeKYap52zI2Oqg"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_JvwMUATPEeKBWuNxutB_JA"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_BrxP8A5gEeKhM-LbJL1lEw"/>
         </children>
         <children>
           <emfPageIdentifier href="RakhmatullinModel1.notation#_AucQwA57EeKhM-LbJL1lEw"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_MLMygA58EeKhM-LbJL1lEw"/>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_XDpmUA7KEeKhM-LbJL1lEw"/>
         </children>
       </children>
     </windows>
