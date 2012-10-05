@@ -2658,6 +2658,63 @@
           <packagedElement xmi:type="uml:SendSignalEvent" xmi:id="_9xGmFg5pEeKhM-LbJL1lEw" name="SendSignalEvent0"/>
           <packagedElement xmi:type="uml:CreationEvent" xmi:id="_9xGmFw5pEeKhM-LbJL1lEw" name="CreationEvent0"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_qmFe0A8EEeKhM-LbJL1lEw" name="TableStudent">
+          <ownedAttribute xmi:id="_zyEQwA8FEeKhM-LbJL1lEw" name="id" isLeaf="true" isOrdered="true" isUnique="false" isReadOnly="true" isDerivedUnion="true"/>
+          <ownedAttribute xmi:id="_DHsW8A8GEeKhM-LbJL1lEw" name="name"/>
+          <ownedAttribute xmi:id="_FMQ2wA8GEeKhM-LbJL1lEw" name="address"/>
+          <ownedOperation xmi:id="_aoWaUA8FEeKhM-LbJL1lEw" name="pkStudent"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_q0j_sA8EEeKhM-LbJL1lEw" name="TableClassification">
+          <ownedAttribute xmi:id="_JdKrQA8GEeKhM-LbJL1lEw" name="idStudent"/>
+          <ownedOperation xmi:id="_zOhCUA8GEeKhM-LbJL1lEw" name="pkClassification"/>
+          <ownedOperation xmi:id="_06Z8YA8GEeKhM-LbJL1lEw" name="fkClassification"/>
+          <ownedOperation xmi:id="_3-LPYA8GEeKhM-LbJL1lEw" name="constraint1"/>
+          <ownedOperation xmi:id="_5zDGUA8GEeKhM-LbJL1lEw" name="constraint2"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rCiKQA8EEeKhM-LbJL1lEw" name="TableFullTimeClassification">
+          <ownedAttribute xmi:id="_MrZh0A8GEeKhM-LbJL1lEw" name="idStudent"/>
+          <ownedAttribute xmi:id="_O1VCwA8GEeKhM-LbJL1lEw" name="gradDate"/>
+          <ownedOperation xmi:id="_ePwJYA8GEeKhM-LbJL1lEw" name="pkFullTimeClassification"/>
+          <ownedOperation xmi:id="_tgYa0A8GEeKhM-LbJL1lEw" name="fkFullTimeClassification"/>
+          <ownedOperation xmi:id="_v6pd0A8GEeKhM-LbJL1lEw" name="constraint"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rPbWwA8EEeKhM-LbJL1lEw" name="TablePartTimeClassification">
+          <ownedAttribute xmi:id="_Qp1GQA8GEeKhM-LbJL1lEw" name="idStudent"/>
+          <ownedAttribute xmi:id="_Sj0twA8GEeKhM-LbJL1lEw" name="maxNumOfCourses"/>
+          <ownedOperation xmi:id="_VSJ8QA8GEeKhM-LbJL1lEw" name="pkPartTimeClassification"/>
+          <ownedOperation xmi:id="_YXsJ0A8GEeKhM-LbJL1lEw" name="fkPartTimeClassification"/>
+          <ownedOperation xmi:id="_bSwMwA8GEeKhM-LbJL1lEw" name="constraint"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_DYKmcA8HEeKhM-LbJL1lEw" name="tableStudent_tableClassification_1" memberEnd="_DYKmcQ8HEeKhM-LbJL1lEw _DYJ_YA8HEeKhM-LbJL1lEw">
+          <ownedEnd xmi:id="_DYKmcQ8HEeKhM-LbJL1lEw" name="tableStudent" type="_qmFe0A8EEeKhM-LbJL1lEw" association="_DYKmcA8HEeKhM-LbJL1lEw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DYKmcg8HEeKhM-LbJL1lEw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DYKmcw8HEeKhM-LbJL1lEw" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_DYJ_YA8HEeKhM-LbJL1lEw" name="tableClassification" type="_q0j_sA8EEeKhM-LbJL1lEw" aggregation="composite" association="_DYKmcA8HEeKhM-LbJL1lEw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DYJ_YQ8HEeKhM-LbJL1lEw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DYJ_Yg8HEeKhM-LbJL1lEw" value="1"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_KDHbgA8HEeKhM-LbJL1lEw" name="tableClassification_tableFullTimeClassification_1" memberEnd="_KDHbgQ8HEeKhM-LbJL1lEw _KDG0cA8HEeKhM-LbJL1lEw">
+          <ownedEnd xmi:id="_KDHbgQ8HEeKhM-LbJL1lEw" name="tableClassification" type="_q0j_sA8EEeKhM-LbJL1lEw" association="_KDHbgA8HEeKhM-LbJL1lEw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KDHbgg8HEeKhM-LbJL1lEw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KDHbgw8HEeKhM-LbJL1lEw" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_KDG0cA8HEeKhM-LbJL1lEw" name="tableFullTimeClassification" type="_rCiKQA8EEeKhM-LbJL1lEw" aggregation="composite" association="_KDHbgA8HEeKhM-LbJL1lEw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KDG0cQ8HEeKhM-LbJL1lEw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KDG0cg8HEeKhM-LbJL1lEw"/>
+          </ownedEnd>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_QdalcA8HEeKhM-LbJL1lEw" name="tableClassification_tablePartTimeClassification_1" memberEnd="_QdalcQ8HEeKhM-LbJL1lEw _QdZ-YA8HEeKhM-LbJL1lEw">
+          <ownedEnd xmi:id="_QdalcQ8HEeKhM-LbJL1lEw" name="tableClassification" type="_q0j_sA8EEeKhM-LbJL1lEw" association="_QdalcA8HEeKhM-LbJL1lEw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qdalcg8HEeKhM-LbJL1lEw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qdalcw8HEeKhM-LbJL1lEw" value="1"/>
+          </ownedEnd>
+          <ownedEnd xmi:id="_QdZ-YA8HEeKhM-LbJL1lEw" name="tablePartTimeClassification" type="_rPbWwA8EEeKhM-LbJL1lEw" aggregation="composite" association="_QdalcA8HEeKhM-LbJL1lEw">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QdZ-YQ8HEeKhM-LbJL1lEw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QdZ-Yg8HEeKhM-LbJL1lEw"/>
+          </ownedEnd>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_O52-EAALEeKpPqgvGZTakg" name="Component View"/>
@@ -2779,4 +2836,33 @@
   <_4prak:subsystem xmi:id="_RptfEA57EeKhM-LbJL1lEw" base_Package="_8oeBQA53EeKhM-LbJL1lEw"/>
   <_4prak:interfacerealization xmi:id="_KcoQ4A7JEeKhM-LbJL1lEw" base_Collaboration="_Hw_KAA7JEeKhM-LbJL1lEw"/>
   <_4prak:subsystemproxy xmi:id="_jcPToA7KEeKhM-LbJL1lEw" base_Class="_CicFUA54EeKhM-LbJL1lEw"/>
+  <_4prak:table xmi:id="_sbqgYA8EEeKhM-LbJL1lEw" base_Class="_qmFe0A8EEeKhM-LbJL1lEw"/>
+  <_4prak:table xmi:id="_tFaoAA8EEeKhM-LbJL1lEw" base_Class="_q0j_sA8EEeKhM-LbJL1lEw"/>
+  <_4prak:table xmi:id="_to6WoA8EEeKhM-LbJL1lEw" base_Class="_rCiKQA8EEeKhM-LbJL1lEw"/>
+  <_4prak:table xmi:id="_uF8Q4A8EEeKhM-LbJL1lEw" base_Class="_rPbWwA8EEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="__iDF8A8FEeKhM-LbJL1lEw" base_Property="_zyEQwA8FEeKhM-LbJL1lEw"/>
+  <_4prak:column xmi:id="_EUdsEA8GEeKhM-LbJL1lEw" base_Property="_DHsW8A8GEeKhM-LbJL1lEw"/>
+  <_4prak:column xmi:id="_GS35gA8GEeKhM-LbJL1lEw" base_Property="_FMQ2wA8GEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="_He8EAA8GEeKhM-LbJL1lEw" base_Operation="_aoWaUA8FEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="_Kk4hQA8GEeKhM-LbJL1lEw" base_Property="_JdKrQA8GEeKhM-LbJL1lEw"/>
+  <_4prak:FK xmi:id="_KnP4wA8GEeKhM-LbJL1lEw" base_Property="_JdKrQA8GEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="_N0-ZAA8GEeKhM-LbJL1lEw" base_Property="_MrZh0A8GEeKhM-LbJL1lEw"/>
+  <_4prak:FK xmi:id="_N3aB8A8GEeKhM-LbJL1lEw" base_Property="_MrZh0A8GEeKhM-LbJL1lEw"/>
+  <_4prak:column xmi:id="_P4a3cA8GEeKhM-LbJL1lEw" base_Property="_O1VCwA8GEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="_RwcJAA8GEeKhM-LbJL1lEw" base_Property="_Qp1GQA8GEeKhM-LbJL1lEw"/>
+  <_4prak:FK xmi:id="_RzOXQA8GEeKhM-LbJL1lEw" base_Property="_Qp1GQA8GEeKhM-LbJL1lEw"/>
+  <_4prak:column xmi:id="_UIgMkA8GEeKhM-LbJL1lEw" base_Property="_Sj0twA8GEeKhM-LbJL1lEw"/>
+  <_4prak:FK xmi:id="_aXA9QA8GEeKhM-LbJL1lEw" base_Operation="_YXsJ0A8GEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="_a_2e4A8GEeKhM-LbJL1lEw" base_Operation="_VSJ8QA8GEeKhM-LbJL1lEw"/>
+  <_4prak:index xmi:id="_dfzTIA8GEeKhM-LbJL1lEw" base_Operation="_bSwMwA8GEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="_tFlVMA8GEeKhM-LbJL1lEw" base_Operation="_ePwJYA8GEeKhM-LbJL1lEw"/>
+  <_4prak:FK xmi:id="_vJjYEA8GEeKhM-LbJL1lEw" base_Operation="_tgYa0A8GEeKhM-LbJL1lEw"/>
+  <_4prak:index xmi:id="_xwu1sA8GEeKhM-LbJL1lEw" base_Operation="_v6pd0A8GEeKhM-LbJL1lEw"/>
+  <_4prak:PK xmi:id="_0oshUA8GEeKhM-LbJL1lEw" base_Operation="_zOhCUA8GEeKhM-LbJL1lEw"/>
+  <_4prak:FK xmi:id="_2g6nMA8GEeKhM-LbJL1lEw" base_Operation="_06Z8YA8GEeKhM-LbJL1lEw"/>
+  <_4prak:index xmi:id="_5ZyRwA8GEeKhM-LbJL1lEw" base_Operation="_3-LPYA8GEeKhM-LbJL1lEw"/>
+  <_4prak:unique xmi:id="_7Bi5wA8GEeKhM-LbJL1lEw" base_Operation="_5zDGUA8GEeKhM-LbJL1lEw"/>
+  <_4prak:identifying xmi:id="_IwA04A8HEeKhM-LbJL1lEw" base_Association="_DYKmcA8HEeKhM-LbJL1lEw"/>
+  <_4prak:identifying xmi:id="_LRXXUA8HEeKhM-LbJL1lEw" base_Association="_KDHbgA8HEeKhM-LbJL1lEw"/>
+  <_4prak:identifying xmi:id="_UyUJIA8HEeKhM-LbJL1lEw" base_Association="_QdalcA8HEeKhM-LbJL1lEw"/>
 </xmi:XMI>
