@@ -88,6 +88,9 @@
     <windows>
       <children xsi:type="di:TabFolder">
         <children>
+          <emfPageIdentifier href="RakhmatullinModel1.notation#_n7cbIA7QEeKhM-LbJL1lEw"/>
+        </children>
+        <children>
           <emfPageIdentifier href="RakhmatullinModel1.notation#_IWowAA5hEeKhM-LbJL1lEw"/>
         </children>
         <children>
@@ -109,13 +112,7 @@
           <emfPageIdentifier href="RakhmatullinModel1.notation#_n7L8cA7QEeKhM-LbJL1lEw"/>
         </children>
         <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_n7cbIA7QEeKhM-LbJL1lEw"/>
-        </children>
-        <children>
           <emfPageIdentifier href="RakhmatullinModel1.notation#_n7mzMA7QEeKhM-LbJL1lEw"/>
-        </children>
-        <children>
-          <emfPageIdentifier href="RakhmatullinModel1.notation#_1vWIgA7TEeKhM-LbJL1lEw"/>
         </children>
         <children>
           <emfPageIdentifier href="RakhmatullinModel1.notation#_m73o8A7aEeKhM-LbJL1lEw"/>

@@ -917,7 +917,7 @@
               <subvertex xmi:type="uml:State" xmi:id="_vBzOQA7aEeKhM-LbJL1lEw" name="Canceled"/>
               <subvertex xmi:type="uml:State" xmi:id="_wvNyUA7aEeKhM-LbJL1lEw" name="Closed"/>
               <subvertex xmi:type="uml:Pseudostate" xmi:id="_zbQh0A7aEeKhM-LbJL1lEw" name="Choic0" kind="choice"/>
-              <transition xmi:id="_1xUaQA7aEeKhM-LbJL1lEw" name="Transition0" source="_rJAXwA7aEeKhM-LbJL1lEw" target="_uFJ_0A7aEeKhM-LbJL1lEw">
+              <transition xmi:id="_1xUaQA7aEeKhM-LbJL1lEw" name="new" source="_rJAXwA7aEeKhM-LbJL1lEw" target="_uFJ_0A7aEeKhM-LbJL1lEw">
                 <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rwkKMA7eEeKhM-LbJL1lEw" name="next" isActive="true">
                   <language>Natural language</language>
                   <body>numStudents=0; ^courseRoster.create();</body>
@@ -1733,17 +1733,17 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_17xXMA5gEeKhM-LbJL1lEw" name="Application">
           <packagedElement xmi:type="uml:Package" xmi:id="_DwtXoA5qEeKhM-LbJL1lEw" name="Registration">
-            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmiA5pEeKhM-LbJL1lEw" name="registrationController_schedule" memberEnd="_9xGmiQ5pEeKhM-LbJL1lEw _9xGmjA5pEeKhM-LbJL1lEw">
+            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmiA5pEeKhM-LbJL1lEw" name="registrationController_schedule" memberEnd="_9xGmiQ5pEeKhM-LbJL1lEw _9xGmjA5pEeKhM-LbJL1lEw" navigableOwnedEnd="_9xGmjA5pEeKhM-LbJL1lEw">
               <ownedEnd xmi:id="_9xGmiQ5pEeKhM-LbJL1lEw" name="" type="_9xGmag5pEeKhM-LbJL1lEw" association="_9xGmiA5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmig5pEeKhM-LbJL1lEw" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmiw5pEeKhM-LbJL1lEw"/>
               </ownedEnd>
-              <ownedEnd xmi:id="_9xGmjA5pEeKhM-LbJL1lEw" name="" type="_9xGmMA5pEeKhM-LbJL1lEw" association="_9xGmiA5pEeKhM-LbJL1lEw">
+              <ownedEnd xmi:id="_9xGmjA5pEeKhM-LbJL1lEw" name="" type="_9xGmMA5pEeKhM-LbJL1lEw" aggregation="shared" association="_9xGmiA5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmjQ5pEeKhM-LbJL1lEw" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmjg5pEeKhM-LbJL1lEw"/>
               </ownedEnd>
             </packagedElement>
-            <packagedElement xmi:type="uml:Class" xmi:id="_9xGmag5pEeKhM-LbJL1lEw" name="RegistrationController">
+            <packagedElement xmi:type="uml:Class" xmi:id="_9xGmag5pEeKhM-LbJL1lEw" name="RegistrationController" clientDependency="_UqSzYA74EeKhM-LbJL1lEw">
               <nestedClassifier xmi:type="uml:Class" xmi:id="_9xGmaw5pEeKhM-LbJL1lEw"/>
               <ownedOperation xmi:id="_9xGmbA5pEeKhM-LbJL1lEw" name="//registerForCourses"/>
               <ownedOperation xmi:id="_9xGmbQ5pEeKhM-LbJL1lEw" name=" //isRegistrationOpen?"/>
@@ -1771,32 +1771,33 @@
               <ownedOperation xmi:id="_9xGmaA5pEeKhM-LbJL1lEw" name="//selectAlternativeCourse"/>
               <ownedOperation xmi:id="_9xGmaQ5pEeKhM-LbJL1lEw" name="//submitSelection"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmjw5pEeKhM-LbJL1lEw" name="registrationController_student_1" memberEnd="_9xGmkA5pEeKhM-LbJL1lEw _9xGmkw5pEeKhM-LbJL1lEw">
+            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmjw5pEeKhM-LbJL1lEw" name="registrationController_student_1" memberEnd="_9xGmkA5pEeKhM-LbJL1lEw _9xGmkw5pEeKhM-LbJL1lEw" navigableOwnedEnd="_9xGmkw5pEeKhM-LbJL1lEw">
               <ownedEnd xmi:id="_9xGmkA5pEeKhM-LbJL1lEw" name="registrationController" type="_9xGmag5pEeKhM-LbJL1lEw" association="_9xGmjw5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmkQ5pEeKhM-LbJL1lEw" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmkg5pEeKhM-LbJL1lEw"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmkg5pEeKhM-LbJL1lEw" value="1"/>
               </ownedEnd>
-              <ownedEnd xmi:id="_9xGmkw5pEeKhM-LbJL1lEw" name="student" type="_9xGmGw5pEeKhM-LbJL1lEw" association="_9xGmjw5pEeKhM-LbJL1lEw">
+              <ownedEnd xmi:id="_9xGmkw5pEeKhM-LbJL1lEw" name="student" type="_9xGmGw5pEeKhM-LbJL1lEw" aggregation="shared" association="_9xGmjw5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmlA5pEeKhM-LbJL1lEw" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmlQ5pEeKhM-LbJL1lEw"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmlQ5pEeKhM-LbJL1lEw" value="1"/>
               </ownedEnd>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmeg5pEeKhM-LbJL1lEw" name="registrationController_registerForCoursesForm" memberEnd="_9xGmfg5pEeKhM-LbJL1lEw _9xGmew5pEeKhM-LbJL1lEw">
-              <ownedEnd xmi:id="_9xGmew5pEeKhM-LbJL1lEw" name="" type="_9xGmag5pEeKhM-LbJL1lEw" association="_9xGmeg5pEeKhM-LbJL1lEw">
+            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmeg5pEeKhM-LbJL1lEw" name="registrationController_registerForCoursesForm" memberEnd="_9xGmfg5pEeKhM-LbJL1lEw _9xGmew5pEeKhM-LbJL1lEw" navigableOwnedEnd="_9xGmew5pEeKhM-LbJL1lEw">
+              <ownedEnd xmi:id="_9xGmew5pEeKhM-LbJL1lEw" name="" type="_9xGmag5pEeKhM-LbJL1lEw" aggregation="shared" association="_9xGmeg5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmfA5pEeKhM-LbJL1lEw" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmfQ5pEeKhM-LbJL1lEw" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmfQ5pEeKhM-LbJL1lEw"/>
               </ownedEnd>
               <ownedEnd xmi:id="_9xGmfg5pEeKhM-LbJL1lEw" name="" type="_9xGmXw5pEeKhM-LbJL1lEw" association="_9xGmeg5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmfw5pEeKhM-LbJL1lEw" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmgA5pEeKhM-LbJL1lEw" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmgA5pEeKhM-LbJL1lEw"/>
               </ownedEnd>
             </packagedElement>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="_UqSzYA74EeKhM-LbJL1lEw" name="Dependency1" supplier="_ityjwA5-EeKhM-LbJL1lEw" client="_9xGmag5pEeKhM-LbJL1lEw"/>
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_45H5IA5gEeKhM-LbJL1lEw" name="BusinessServices">
           <packagedElement xmi:type="uml:Package" xmi:id="_Xd1WoA53EeKhM-LbJL1lEw" name="UniversityArtefacts">
             <packageImport xmi:id="_YYZkoA57EeKhM-LbJL1lEw" importedPackage="_8oeBQA53EeKhM-LbJL1lEw"/>
-            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmPQ5pEeKhM-LbJL1lEw" name="student_schedule" memberEnd="_9xGmPg5pEeKhM-LbJL1lEw _9xGmQQ5pEeKhM-LbJL1lEw">
+            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmPQ5pEeKhM-LbJL1lEw" name="student_schedule" memberEnd="_9xGmPg5pEeKhM-LbJL1lEw _9xGmQQ5pEeKhM-LbJL1lEw" navigableOwnedEnd="_9xGmQQ5pEeKhM-LbJL1lEw">
               <ownedEnd xmi:id="_9xGmPg5pEeKhM-LbJL1lEw" name="student" type="_9xGmGw5pEeKhM-LbJL1lEw" association="_9xGmPQ5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmPw5pEeKhM-LbJL1lEw" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmQA5pEeKhM-LbJL1lEw" value="1"/>
@@ -1830,7 +1831,7 @@
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmVQ5pEeKhM-LbJL1lEw"/>
               </ownedEnd>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmSw5pEeKhM-LbJL1lEw" name="alternativeCourse_schedule" memberEnd="_9xGmTA5pEeKhM-LbJL1lEw _9xGmTw5pEeKhM-LbJL1lEw">
+            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmSw5pEeKhM-LbJL1lEw" name="alternativeCourse_schedule" memberEnd="_9xGmTA5pEeKhM-LbJL1lEw _9xGmTw5pEeKhM-LbJL1lEw" navigableOwnedEnd="_9xGmTA5pEeKhM-LbJL1lEw _9xGmTw5pEeKhM-LbJL1lEw">
               <ownedEnd xmi:id="_9xGmTA5pEeKhM-LbJL1lEw" name="altrenativeCourse" type="_9xGmIg5pEeKhM-LbJL1lEw" association="_9xGmSw5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmTQ5pEeKhM-LbJL1lEw" value="2"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmTg5pEeKhM-LbJL1lEw"/>
@@ -1896,6 +1897,7 @@
             </packagedElement>
             <packagedElement xmi:type="uml:Class" xmi:id="_9xGmMA5pEeKhM-LbJL1lEw" name="Schedule">
               <ownedAttribute xmi:id="_9xGmMQ5pEeKhM-LbJL1lEw" name="semester" visibility="private"/>
+              <ownedOperation xmi:id="_qHzd0A74EeKhM-LbJL1lEw" name="//createWithOfferings"/>
             </packagedElement>
             <packagedElement xmi:type="uml:Association" xmi:id="_9xGmMg5pEeKhM-LbJL1lEw" name="hasPrerequisites_prerequisiteOf" memberEnd="_9xGmMw5pEeKhM-LbJL1lEw _9xGmNg5pEeKhM-LbJL1lEw">
               <ownedEnd xmi:id="_9xGmMw5pEeKhM-LbJL1lEw" name="hasPrerequisites" type="_9xGmGA5pEeKhM-LbJL1lEw" association="_9xGmMg5pEeKhM-LbJL1lEw">
@@ -1911,7 +1913,7 @@
               <ownedAttribute xmi:id="_9xGmLg5pEeKhM-LbJL1lEw" name="name" visibility="private"/>
               <ownedAttribute xmi:id="_9xGmLw5pEeKhM-LbJL1lEw" name="academicDegree" visibility="private"/>
             </packagedElement>
-            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmRA5pEeKhM-LbJL1lEw" name="primaryCourses_schedule" memberEnd="_9xGmRQ5pEeKhM-LbJL1lEw _9xGmSA5pEeKhM-LbJL1lEw">
+            <packagedElement xmi:type="uml:Association" xmi:id="_9xGmRA5pEeKhM-LbJL1lEw" name="primaryCourses_schedule" memberEnd="_9xGmRQ5pEeKhM-LbJL1lEw _9xGmSA5pEeKhM-LbJL1lEw" navigableOwnedEnd="_9xGmSA5pEeKhM-LbJL1lEw _9xGmRQ5pEeKhM-LbJL1lEw">
               <ownedEnd xmi:id="_9xGmRQ5pEeKhM-LbJL1lEw" name="primaryCourses" type="_9xGmIg5pEeKhM-LbJL1lEw" association="_9xGmRA5pEeKhM-LbJL1lEw">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9xGmRg5pEeKhM-LbJL1lEw" value="4"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9xGmRw5pEeKhM-LbJL1lEw"/>
@@ -1941,12 +1943,27 @@
               <ownedAttribute xmi:id="_9xGmKw5pEeKhM-LbJL1lEw" name="day" visibility="private"/>
               <ownedAttribute xmi:id="_9xGmLA5pEeKhM-LbJL1lEw" name="pair" visibility="private"/>
               <ownedAttribute xmi:id="_jlSvsA7PEeKhM-LbJL1lEw" name="number" visibility="private"/>
-              <ownedAttribute xmi:id="_mrvjQA7PEeKhM-LbJL1lEw" name="numStudents" visibility="private" isDerived="true">
+              <ownedAttribute xmi:id="_mrvjQA7PEeKhM-LbJL1lEw" name="numStudents" visibility="private" type="_D09xYg5gEeKhM-LbJL1lEw" isDerived="true">
                 <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pTlIMA7PEeKhM-LbJL1lEw" value="1"/>
                 <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pTiE4A7PEeKhM-LbJL1lEw" value="1"/>
               </ownedAttribute>
               <ownedAttribute xmi:id="_twQH0A7PEeKhM-LbJL1lEw" name="day" visibility="private"/>
               <ownedAttribute xmi:id="_u1mmUA7PEeKhM-LbJL1lEw" name="pair" visibility="private"/>
+              <ownedOperation xmi:id="_kWA-AA77EeKhM-LbJL1lEw" name="del"/>
+              <ownedOperation xmi:id="_kWA-AQ77EeKhM-LbJL1lEw" name="cancel"/>
+              <ownedOperation xmi:id="_kWBlEA77EeKhM-LbJL1lEw" name="removeStudent">
+                <ownedParameter xmi:id="_kWBlEQ77EeKhM-LbJL1lEw" name="sch" type="_h2wbQAHfEeK-Jt1yrizUxQ" isUnique="false">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wC74IA77EeKhM-LbJL1lEw" value="*"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wC2YkA77EeKhM-LbJL1lEw" value="1"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_kWBlEg77EeKhM-LbJL1lEw" name="close"/>
+              <ownedOperation xmi:id="_kWBlEw77EeKhM-LbJL1lEw" name="addStudent">
+                <ownedParameter xmi:id="_kWBlFA77EeKhM-LbJL1lEw" name="sch" type="_h2wbQAHfEeK-Jt1yrizUxQ">
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ybFbQA77EeKhM-LbJL1lEw" value="1"/>
+                  <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ya-tkA77EeKhM-LbJL1lEw" value="1"/>
+                </ownedParameter>
+              </ownedOperation>
             </packagedElement>
             <packagedElement xmi:type="uml:Signal" xmi:id="_9xGmeQ5pEeKhM-LbJL1lEw" name="//createWithOfferings"/>
             <packagedElement xmi:type="uml:Class" xmi:id="_ONRJMA6CEeKhM-LbJL1lEw" name="CourseOfferingList" clientDependency="_L7fM0A7PEeKhM-LbJL1lEw">
